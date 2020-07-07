@@ -63,12 +63,13 @@ form button:hover {
   margin: 40px 0;
 }
 
-input[type="checkbox"]{
-  width: 25px;
+input[type="checkbox"] {
+  width: 25px; 
   height: 25px;
 }
 
-button{
+button {
   display: block;
+  margin: 40px 0;
   font-size: 1em;
 }
