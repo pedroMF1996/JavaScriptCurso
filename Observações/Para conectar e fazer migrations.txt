@@ -1,0 +1,5 @@
+Para conectar e fazer migrations você deve  executar o comando:
+
+  ssh -NL 3306:localhost:3306 pmfrp@34.95.215.50
+
+no terminal
