@@ -11,7 +11,7 @@ export default {
     return callback(null, true);
   },
   storage: multer.diskStorage({
-    destination: resolve(__dirname, '..', '..', 'uploads'),
+    destination: resolve(__dirname, '..', '..', 'uploads', 'images'),
     filename: (req, file, callback) => {
       console.log(extname(file.originalname));
       return callback(null, `${Date.now()}_${aleatorio()}${extname(file.originalname)}`);
