@@ -28,6 +28,7 @@ class TokenController {
       return res.status(200).json({ token });
     } catch (error) {
       console.log(error);
+      return null;
     }
   }
 }

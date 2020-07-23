@@ -64,6 +64,6 @@ export default class Aluno extends Model {
   }
 
   static associate(models) {
-    this.hasOne(models.Foto, { foreignKey: 'aluno_id' });
+    this.hasMany(models.Foto, { foreignKey: 'aluno_id' });
   }
 }
