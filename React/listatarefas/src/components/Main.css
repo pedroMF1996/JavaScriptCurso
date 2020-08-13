@@ -1,0 +1,57 @@
+.main{
+  background-color: #fff;
+  padding: 30px;
+  margin: 50px auto;
+  max-width: 640px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main h1{
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+.tarefas{
+  margin-top: 30px;
+}
+
+.tarefas li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  /* flex-direction: column; */
+}
+.tarefas li:hover{
+  background-color: #51c5de;
+  /* flex-direction: column; */
+  transition-duration: 225ms;
+}
+
+.tarefas li .edit {
+  margin-right: 15px;
+  color: #51c5de;
+ }
+
+.tarefas li .delete {
+  margin-right: 15px;
+  color: #f04c64;
+ }
+
+ .tarefas li:hover .delete, .tarefas li:hover .edit{
+  color: black;
+  transition-duration: 225ms;
+ }
+
+ .tarefas li .delete:hover, .tarefas li .edit:hover{
+   cursor: pointer;
+ }
+
+ .tarefas li span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }

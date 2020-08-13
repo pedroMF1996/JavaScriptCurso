@@ -25,7 +25,8 @@ class TokenController {
         expiresIn: process.env.TOKEN_EXPRTION,
       });
 
-      return res.status(200).json({ token });
+      // eslint-disable-next-line max-len
+      return res.status(200).json({ token, user: { nome: user.nome, id, email } });
     } catch (error) {
       console.log(error);
       return null;
